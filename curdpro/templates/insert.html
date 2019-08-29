@@ -1,0 +1,149 @@
+{% load static %}
+<br>
+<html>
+<head>
+    <title>Insert</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<style>
+    body{background-color: #A4A4A4;
+        margin-top: 5px;}
+    .jumbotron{margin:0px 200px -350px 200px;
+            background-color: #F1F8E0;
+            border-radius: 0;
+            border: 1px #2E6962 solid;
+            overflow: hidden;}
+    #h12{color:green;
+        margin-bottom: 100px;}
+    a{margin-top: 50px;
+        background-color: #2E6962;
+        color:white;
+        margin-left:100px;
+        padding:15px;
+        font-weight: bold;}
+    a:hover{background-color: white;
+            color:green;
+            border: green 2px solid;
+            text-decoration:none;
+            border-radius:10px;}
+    .clsheader{
+                margin:-22px 200px;
+                background-color: #EFF3CB;
+                padding: 20px;}
+    hr{ border: 2px #2E6962 solid; width:67%; margin: auto;}
+    #h11{margin: 25px 0 0 235px;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 0;
+        font-family: Times New Roman;
+        color: green;
+        float: left;}
+    #img2{float: right;}
+    .con2{margin-top: 20px;
+        padding: 10px;
+        background-color: #CFDBC0;
+        margin-bottom: -40px;}
+    ul{float: left;
+        width: 100%;}
+    ul li{width: 100%;
+        display: block;
+        margin-left: 5px;}
+    ul li a{
+        float: left;}
+    a{margin-left: 30px;}
+    .conlinks{margin-top: -30px;}
+
+
+</style>
+<body>
+<center>
+        <div class="jumbotron clsheader">
+            <div class="container">
+            <i class="material-icons material-icons-100x">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            <i class="material-icons" style="font-size:20px">flare</i>
+            </div>
+            <img src="{% static 'mysite\images\durgasoft_logo.jpg'%}" width="200px" height="70px" style="margin: 8px 0px 10px -900px;
+               padding: 0px;border: 1px white solid">
+            <h1 class="text-center" id="h11"> Durga Software Solutions</h1>
+            <img src="{% static 'mysite\images\courses.jpg' %}" id='img2' width="200px" height="70px" STYLE="margin-top: 8px;">
+        </div>
+</center>
+<center>
+<hr>
+   <div class="jumbotron">
+    <marquee style="color: red;margin:-50px 0 10px 0;font-weight: bold">Welcome To Durgasoft, Django CURD Operations</marquee>
+    <fieldset style="border: 2px #B7C27E solid;padding: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2 col-md-8">
+                    <h2 class="text-center" style="margin: -50px 0px 10px -50px ;width: 400px;">Create Product Data</h2>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ iform }}
+                        <br>
+                        <center>
+                            <input type="submit" value="Submit" class="btn btn-success">
+                            <input type="reset" value="Clear" class="btn btn-danger" style="margin-left: 50px;">
+                        </center><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <fieldset style="border: 2px #B7C27E solid;">
+           <div class="container conlinks" >
+            <ul style="text-decoration: none;list-style-type: none;overflow: hidden;float: left;">
+                <li><a href="/create/"><i class='fas fa-pencil-alt'></i> Create </a></li>
+                <li><a href="/update/"><i class='far fa-edit'></i> Update</a></li>
+                <li><a href="/retrieve/"><i class='fas fa-sync-alt'></i> Retrieve</a></li>
+                <li><a href="/delete/"><i class='far fa-trash-alt'></i> Delete</a></li>
+            </ul>
+            </div>
+        </fieldset>
+    </fieldset>
+       <center>
+    <div class="container con2">
+        <pre>DURGA SOFTWARE SOLUTIONS at Maitrivanam,Plot No : 202, IInd Floor,HUDA Maitrivanam,
+Ameerpet, Hyderabad-500038. Ph.No : +91 - 9246212143, 8096969696</pre>
+    </div>
+    </center>
+    </div>
+
+
+</center>
+</body>
+</html>
